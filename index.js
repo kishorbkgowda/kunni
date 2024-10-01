@@ -1,5 +1,5 @@
 var i = 0;
-
+let a = 120;
 const pr = new Promise((res) => {
     const id = setInterval(() => {
         console.log(i);
