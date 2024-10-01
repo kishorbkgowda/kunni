@@ -1,6 +1,22 @@
-let a =[{a:1,lol:"kunni"},{a:1,lol:"kunni"},{a:1,lol:"kunni"}];
+var i = 0;
+const pr = new Promise((res) => {
+    const id = setInterval(() => {
+        console.log(i);
+        i++;
+        if (i === 2) {
+            clearInterval(id);
+            
+        }
+    }, 2000);
+});
 
-for(let lol in a)
-{
-    console.log(a[lol]);
+async function lol() {
+    try {
+        const result = await pr;
+        console.log(result);
+    } catch (e) {
+        console.log(e);
+    }
 }
+
+lol();
