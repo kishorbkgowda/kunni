@@ -5,5 +5,6 @@ arr.forEach((kunni,index)=>
    console.log("the value : "+kunni + " index : "+index)
 })
 console.log(sum);
+console.log(first);
 
 
